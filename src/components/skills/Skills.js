@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Skills.scss';
 
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const Skills = () => {
 
@@ -8,7 +9,7 @@ const Skills = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let response = await fetch('https://api.airtable.com/v0/appBnCm52rE74Dq30/skills?api_key=keyYwMrcMsNgU62rC')
+      let response = await fetch(`https://api.airtable.com/v0/appBnCm52rE74Dq30/skills?api_key=${API_KEY}`)
       let data = await response.json();
       setSkill(data);
       return console.log(skill);
