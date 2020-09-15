@@ -1,0 +1,19 @@
+.mainConainer {
+
+    & .title {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        & div {
+            margin-top: 8px;
+            width: 2px;
+            height: 10px;
+            background-color: #12b2f9;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+}
