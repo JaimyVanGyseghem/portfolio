@@ -25,4 +25,5 @@ yarn-error.log*
 .idea/
 .gitignore
 
+# api keys
 .env
