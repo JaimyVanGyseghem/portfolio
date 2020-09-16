@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Mainpage} from './components/Mainpage';
 import {Info} from './components/info';
