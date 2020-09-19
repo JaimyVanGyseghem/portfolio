@@ -53,9 +53,9 @@ class Projects extends Component {
                            this.resetActiveProject();
                            this.handleClose();
                        }}/>
-                <div className="d-flex">
+                <div className="thumbnails">
                     {this.state.projectsList && this.state.projectsList.map(item => (
-                        <div key={item.id} className="mx-4">
+                        <div key={item.id}>
                             <img src={item.fields.thumbnail[0].url} className="w-100" onClick={() => {
                                 this.setActiveProject(item);
                                 this.handleShow();
