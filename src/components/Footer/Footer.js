@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="contactMe">
           <h3>Contacteer mij</h3>
           <p> <i className="fas fa-phone-alt"></i> <span>+32 476 66 87 49</span></p>
-          <p> <i class="far fa-envelope"></i><span>jaimy.vangyseghem@gmail.com</span> </p>
+          <p> <i className="far fa-envelope"></i><span>jaimy.vangyseghem@gmail.com</span> </p>
         </div>
       </div>
     </div>

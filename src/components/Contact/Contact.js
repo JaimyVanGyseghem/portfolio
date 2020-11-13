@@ -23,7 +23,7 @@ const Contact = () => {
           
             <div>
               <div>
-              <i class="far fa-envelope"></i>
+              <i className="far fa-envelope"></i>
               </div>
               <div className="emailTel">
                 <p>E-mail:</p>
@@ -36,8 +36,8 @@ const Contact = () => {
             <div className="icons">
             <p>Wil je nog meer weten? Hier is meer!</p>
               <div className="background">
-                <a href="https://github.com/JaimyVanGyseghem" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jaimy-van-gyseghem-2806a915b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JaimyVanGyseghem" target="_blank"><i className="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jaimy-van-gyseghem-2806a915b/" target="_blank"><i className="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -47,12 +47,12 @@ const Contact = () => {
           <h2>Stel je vragen!</h2>
           <form method="POST" action="form.php">
             <div className="firstLine">
-						<input class="form-control" type="text" placeholder="Naam" name="vrnm" required/>
-            <input class="form-control" type="text" placeholder="Tel. nummer" name="tel" />
+						<input className="form-control" type="text" placeholder="Naam" name="vrnm" required/>
+            <input className="form-control" type="text" placeholder="Tel. nummer" name="tel" />
             </div>
-            <input class="form-control" type="text" placeholder="E-mail" name="email" required/>
+            <input className="form-control" type="text" placeholder="E-mail" name="email" required/>
 						<textarea placeholder="Bericht" rows="6" cols="45" name="msg" required></textarea> <br/>
-						<input class="submit" value="Verstuur" type="submit" name="submit" />
+						<input className="submit" value="Verstuur" type="submit" name="submit" />
 					</form>
         </div>
 
