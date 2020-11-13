@@ -1,12 +1,15 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import './Modal.scss';
+import './Modal.css';
+
+let tags;
 
 function modal(props) {
-    let title, thumbnail, description = null;
+    let title, thumbnail, description, tags, URL = null;
     if (props.activeproject) {
         const project = props.activeproject;
+        {console.log(project)}
         title = (
             <Modal.Title id="contained-modal-title-vcenter">
                 {project.fields.Name}
@@ -18,8 +21,22 @@ function modal(props) {
         );
 
         description = (
-            <h4>{project.fields.info}</h4>
+            <p className="description">{project.fields.info}</p>
         );
+        
+        let tagName = project.fields.tags;
+        let tagArray = tagName.split(',');
+        tags = tagArray.map(t => <span className="tag">{t}</span>);
+
+        tags = (
+          <span>{tags}</span>
+        )
+       
+
+        console.log(tagArray);
+        URL = (
+          <a target="_blank" href={project.fields.URL}>klik hier voor de website</a>
+        )
     }
 
     return (
@@ -33,13 +50,13 @@ function modal(props) {
                 { title }
             </Modal.Header>
             <Modal.Body>
-                { description }
+              <div className="mainContent">
                 { thumbnail }
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.
-                </p>
+                <p>{tags}</p>
+              </div>
+                { description }
+                {URL}
+          
             </Modal.Body>
             <Modal.Footer>
                 <Button onClick={props.onHide}>Close</Button>

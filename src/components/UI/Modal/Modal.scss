@@ -1,3 +1,8 @@
+:root {
+    --color-blue: #12b2f9;
+    --border-radius: 5px;
+  }
+
 .modal-content {
     color: #000;
 }
@@ -8,4 +13,27 @@
     width: 100%;
     margin: auto;
     border-radius: 10px;
+}
+
+.tag {
+    background-color:var(--color-blue);
+    margin-right: 50px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    & span {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+}
+
+.description {
+    margin-top: 30px;
 }

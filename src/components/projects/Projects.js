@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Modal from '../UI/Modal/Modal';
 import {isEmpty} from '../../utility/functions';
-import './Project.scss';
+import './Project.css';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 class Projects extends Component {
@@ -46,6 +46,7 @@ class Projects extends Component {
   
             </div>
 
+
             <div>
                 <Modal activeproject={this.state.activeProject}
                        show={this.state.showModal}
@@ -55,15 +56,29 @@ class Projects extends Component {
                        }}/>
                 <div className="thumbnails">
                     {this.state.projectsList && this.state.projectsList.map(item => (
-                        <div key={item.id}>
-                            <img src={item.fields.thumbnail[0].url} className="w-100" onClick={() => {
-                                this.setActiveProject(item);
-                                this.handleShow();
-                            }}/>
+                        <div className="flip-card" key={item.id}>
+                        <div className="flip-card-inner">
+                          <div className="flip-card-front">
+                          <img src={item.fields.thumbnail[0].url} onClick={() => {
+                                 this.setActiveProject(item);
+                                 this.handleShow();
+                             }}/>
+                          </div>
+                          {console.log(item)}
+                          <div className="flip-card-back" onClick={() => {
+                                 this.setActiveProject(item);
+                                 this.handleShow();
+                             }}>
+                            <h2>{item.fields.Name}</h2> 
+                            <p>{item.fields.tags}</p> 
+                            <p className="desc">{item.fields.info}</p>
+                          </div>
                         </div>
+                      </div>
+                        
                     ))}
                 </div>
-                </div>
+              </div>
             </div>
         );
     }

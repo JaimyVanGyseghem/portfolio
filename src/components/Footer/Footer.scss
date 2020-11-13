@@ -1,0 +1,69 @@
+:root {
+    --color-blue: #12b2f9;
+  }
+
+.footer {
+    margin-top: 80px;
+
+    & .slogan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 15%;
+        & h1 {
+            font-family: 'poppins';
+            & span {
+                color: var(--color-blue);
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    & .footerNav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        & div {
+
+            & h3 {
+                font-size: 20px;
+                color: var(--color-blue);
+            }
+
+            & p {
+                font-weight: 500;
+                margin-bottom: 3px;
+                & span {
+                    margin-left: 10px;  
+                    font-weight: bold;
+                }
+            }
+        }
+        & .contactMe {
+            width: 30%;
+        }
+
+        & .navigation {
+            display: flex;
+            flex-direction: column;
+
+            & a {
+                color: white;
+            }
+        }
+
+        & .quote {
+            width: 35%;
+
+            & p {
+                width: 90%;
+            }
+        }
+    }
+
+}

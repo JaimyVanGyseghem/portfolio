@@ -1,18 +1,23 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
-import {Mainpage} from './components/Mainpage';
-import {Info} from './components/info';
-import {Skills} from './components/skills';
-import {Projects} from './components/projects';
+import './App.css';
+import {Skills, Mainpage, Info, Projects, Contact, Footer} from './components/index';
+
 
 function App() {
   return (
+    <div>
     <div className="App container">
       <Mainpage />
       <Info />
       <Skills />
       <Projects />
+      <div className="contact">
+      <Contact />
+      </div>
+      <Footer />
+    </div>
+    
     </div>
   );
 }

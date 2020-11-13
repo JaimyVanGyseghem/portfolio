@@ -1,0 +1,66 @@
+:root {
+  --color-blue: #12b2f9;
+  --border-radius: 5px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title div {
+  margin-top: 8px;
+  width: 2px;
+  height: 10px;
+  background-color: #12b2f9;
+}
+
+.title p {
+  margin: 0;
+}
+
+.title h1 {
+  margin-top: 20px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.info div {
+  width: 50%;
+}
+
+.info div img {
+  width: 80%;
+  border-radius: 5%;
+}
+
+.info div p {
+  margin: 30px 0;
+}
+
+.info button {
+  background-color: var(--color-blue);
+  border: var(--color-blue);
+  border-radius: var(--border-radius);
+  padding: 15px 30px;
+  color: white;
+}
+/*# sourceMappingURL=info.css.map */

@@ -1,0 +1,20 @@
+:root {
+  --color-white: #FFF;
+  --color-black: #000;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.container {
+  width: 2000px;
+  margin: 0 auto;
+}
+
+.contact {
+  background-color: #111111;
+  margin: 1em calc(50% - 49.1vw);
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,103 @@
+:root {
+  --color-blue: #12b2f9;
+  --border-radius: 5px;
+}
+
+.mainContainerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-top: 50px;
+}
+
+.mainContainerContact .leftSide, .mainContainerContact .rightSide {
+  width: 45%;
+}
+
+.mainContainerContact .leftSide .contactMe div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 5px;
+}
+
+.mainContainerContact .leftSide .contactMe div .emailTel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContainerContact .leftSide .contactMe div .emailTel p {
+  margin: 0;
+  margin-left: 15px;
+}
+
+.mainContainerContact .leftSide .contactMe div .emailTel p:first-of-type {
+  font-size: 10px;
+}
+
+.mainContainerContact .leftSide .icons {
+  margin-left: -100%;
+  margin-top: 110px;
+  text-align: right;
+}
+
+.mainContainerContact .leftSide .icons .background {
+  background-color: var(--color-blue);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  text-align: right;
+}
+
+.mainContainerContact .leftSide .icons .background a {
+  color: white;
+}
+
+.mainContainerContact .leftSide .icons .background a i {
+  font-size: 30px;
+  margin-left: 14px;
+}
+
+.mainContainerContact .rightSide .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.mainContainerContact .rightSide .firstLine input:first-of-type {
+  margin-right: 5px;
+}
+
+.mainContainerContact .rightSide input, .mainContainerContact .rightSide textarea {
+  background-color: #111111;
+  border: 1px solid #838383;
+  margin-bottom: 15px;
+}
+
+.mainContainerContact .rightSide .submit {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Contact.css.map */

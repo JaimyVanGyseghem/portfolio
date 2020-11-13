@@ -1,0 +1,50 @@
+:root {
+  --color-blue: #12b2f9;
+  --border-radius: 5px;
+}
+
+.modal-content {
+  color: #000;
+}
+
+.modal-content img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.tag {
+  background-color: var(--color-blue);
+  margin-right: 50px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContent span {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=Modal.css.map */

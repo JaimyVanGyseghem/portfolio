@@ -1,0 +1,86 @@
+:root {
+  --color-blue: #12b2f9;
+}
+
+.footer {
+  margin-top: 80px;
+}
+
+.footer .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 15%;
+}
+
+.footer .slogan h1 {
+  font-family: 'poppins';
+}
+
+.footer .slogan h1 span {
+  color: var(--color-blue);
+}
+
+.footer .slogan p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.footer .footerNav div h3 {
+  font-size: 20px;
+  color: var(--color-blue);
+}
+
+.footer .footerNav div p {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.footer .footerNav div p span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.footer .footerNav .contactMe {
+  width: 30%;
+}
+
+.footer .footerNav .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footerNav .navigation a {
+  color: white;
+}
+
+.footer .footerNav .quote {
+  width: 35%;
+}
+
+.footer .footerNav .quote p {
+  width: 90%;
+}
+/*# sourceMappingURL=Footer.css.map */
