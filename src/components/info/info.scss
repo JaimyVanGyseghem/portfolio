@@ -49,3 +49,24 @@
         color:white;
     }
 }
+
+@media (max-width: 687px) {
+    .info {
+        flex-direction: column;
+        
+        & div {
+            width: 95%;
+        }
+
+        & div:nth-of-type(2) {
+            margin-top: 50px;
+        }
+
+        & div:first-of-type {
+            & img {
+                width: 80%;
+            }
+        }
+    }
+  
+}

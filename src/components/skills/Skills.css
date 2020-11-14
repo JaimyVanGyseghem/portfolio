@@ -36,7 +36,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 120px;
 }
 
 .mainConainer .skills div {
@@ -61,5 +60,17 @@
   width: 20%;
   margin-right: 40px;
   cursor: auto;
+}
+
+@media (max-width: 600px) {
+  .mainConainer .skills div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 415px) {
+  .mainConainer .skills div {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=Skills.css.map */

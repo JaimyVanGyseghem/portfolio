@@ -34,7 +34,7 @@ class Projects extends Component {
 
     render() {
         return (
-        <div className="mainConainer">
+        <div id="projecten" className="mainConainer">
           <div className="title">
             <div></div>
             <div></div>

@@ -5,13 +5,13 @@ const Mainpage = () => {
   return (
     <div className="mainContainer">
     
-      <div>
+      <div className="mainpageInfo">
         <p className="intro"><span>Hey! Ik ben</span></p>
         <h1>JAIMY VAN GYSEGHEM</h1>
         <p className="openingszin">Een professionele full-stack developer</p>
         <div className="buttons">
-          <button className="contactBTN">Contacteer mij</button>
-          <button className="projectBTN">Mijn projecten</button>
+        <a href="#contact"><button className="contactBTN">Contacteer mij</button></a>
+        <a href="#projecten"> <button className="projectBTN">Mijn projecten</button></a>
         </div>
       </div>
 

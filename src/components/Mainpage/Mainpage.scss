@@ -6,16 +6,19 @@
 .mainContainer {
   display: flex;
   height: 100vh;
+  & div {
+      z-index: 2;
     & .mainPhoto {
         width: 100%;
       }
-
+  }
     & div {
         width:50%;
         &:first-child{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            z-index: 3;
           }
         &.myPhoto {
             display: flex;

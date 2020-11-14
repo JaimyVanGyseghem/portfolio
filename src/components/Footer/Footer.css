@@ -39,6 +39,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -82,5 +84,47 @@
 
 .footer .footerNav .quote p {
   width: 90%;
+}
+
+@media (max-width: 896px) {
+  .footer .footerNav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footerNav .quote {
+    width: 100%;
+  }
+  .footer .footerNav .navigation, .footer .footerNav .contactMe {
+    margin-top: 20px;
+  }
+  .footer .footerNav .navigation {
+    width: 35%;
+  }
+  .footer .footerNav .contactMe {
+    width: 55%;
+  }
+}
+
+@media (max-width: 538px) {
+  .footer .footerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer .footerNav .quote p {
+    width: 100%;
+  }
+  .footer .footerNav .navigation, .footer .footerNav .contactMe {
+    width: 100%;
+  }
+  .slogan {
+    text-align: center;
+    width: 100%;
+  }
+  .slogan h1 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

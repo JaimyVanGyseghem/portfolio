@@ -3,8 +3,6 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import './Modal.css';
 
-let tags;
-
 function modal(props) {
     let title, thumbnail, description, tags, URL = null;
     if (props.activeproject) {

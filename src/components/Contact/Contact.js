@@ -4,7 +4,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
-    <div className="mainContainerContact">
+    <div id="contact" className="mainContainerContact">
       <div className="leftSide">
           <div>
             <h2>Contacteer mij</h2>
@@ -13,20 +13,20 @@ const Contact = () => {
           <div className="contactMe">
             <div>
               <div>
-              <i className="fas fa-phone-alt"></i>
+              <i className="fas fa-phone-alt firstIcon"></i>
               </div>
               <div className="emailTel">
-                <p>Telefoon:</p>
+                <p>  <i className="fas fa-phone-alt secondIcon"></i> Telefoon:</p>
                 <p>+32 476 66 87 49</p>
               </div>
             </div>
           
             <div>
               <div>
-              <i className="far fa-envelope"></i>
+              <i className="far fa-envelope firstIcon"></i>
               </div>
               <div className="emailTel">
-                <p>E-mail:</p>
+                <p> <i className="far fa-envelope secondIcon"></i> E-mail:</p>
                 <p>jaimy.vangyseghem@gmail.com</p>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
             <input className="form-control" type="text" placeholder="Tel. nummer" name="tel" />
             </div>
             <input className="form-control" type="text" placeholder="E-mail" name="email" required/>
-						<textarea placeholder="Bericht" rows="6" cols="45" name="msg" required></textarea> <br/>
+						<textarea placeholder="Bericht" rows="6" name="msg" required></textarea> <br/>
 						<input className="submit" value="Verstuur" type="submit" name="submit" />
 					</form>
         </div>

@@ -12,7 +12,10 @@ const Footer = () => {
 
       <div className="footerNav">
         <div className="quote">
-          <p>Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata sanctus est is the is the magna aliquyam.</p>
+          <p>Iemand die zeer gedreven is in de projecten waar hij aan werkt.
+              Als voorzitter van de studentenraad ben ik een geboren teamleider
+              en teamspeler.
+          </p>
         </div>
         <div className="navigation">
           <h3>Navigatie</h3>

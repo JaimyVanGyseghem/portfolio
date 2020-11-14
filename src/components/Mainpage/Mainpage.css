@@ -10,7 +10,11 @@
   height: 100vh;
 }
 
-.mainContainer .mainPhoto {
+.mainContainer div {
+  z-index: 2;
+}
+
+.mainContainer div .mainPhoto {
   width: 100%;
 }
 
@@ -29,6 +33,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 3;
 }
 
 .mainContainer div.myPhoto {

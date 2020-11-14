@@ -17,4 +17,55 @@ body {
   background-color: #111111;
   margin: 1em calc(50% - 49.1vw);
 }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+  .container .mainContainer h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 833px) {
+  .container .mainContainer .buttons a button {
+    padding: 10px 20px;
+  }
+  .container .mainContainer .buttons a .contactBTN {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 722px) {
+  .container .mainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 100%;
+    margin: 100px 0;
+  }
+  .container .mainContainer h1 {
+    width: 100%;
+  }
+  .container .mainContainer div {
+    margin: 0 auto;
+  }
+  .container .mainContainer div .intro {
+    display: none;
+  }
+  .container .mainContainer .mainpageInfo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .container .mainContainer {
+    margin-top: 50px;
+  }
+  .container .mainContainer .mainPhoto {
+    width: 140%;
+  }
+}
 /*# sourceMappingURL=App.css.map */

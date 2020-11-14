@@ -1,18 +1,87 @@
 :root {
-  --color-white: #FFF;
-  --color-black: #000;
+    --color-white: #FFF;
+    --color-black: #000;
 }
+
 body {
- background-color: var(--color-black);
- color: var(--color-white);
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .container {
-  width: 2000px;
-  margin: 0 auto;
+    width: 2000px;
+    margin: 0 auto;
 }
 
 .contact {
     background-color: #111111;
-    margin:1em calc(50% - 49.1vw);
+    margin: 1em calc(50% - 49.1vw);
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+
+        & .mainContainer h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 833px) {
+    .container {
+        & .mainContainer {
+            & .buttons {
+                & a {
+                    & button {
+                        padding: 10px 20px;
+                    }
+
+                    .contactBTN {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 722px) {
+    .container {
+        & .mainContainer {
+            flex-direction: column-reverse;
+            height: 100%;
+            margin: 100px 0;
+
+            & h1 {
+                width: 100%;
+            }
+
+            & div {
+                margin: 0 auto;
+
+                & .intro {
+                    display: none;
+                }
+            }
+
+            & .mainpageInfo {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        & .mainContainer {
+            margin-top: 50px;
+           & .mainPhoto {
+               width: 140%;
+           }
+        }
+    }
 }

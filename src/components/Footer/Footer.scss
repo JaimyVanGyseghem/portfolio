@@ -26,6 +26,7 @@
     & .footerNav {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 50px;
         margin-top: 20px;
         & div {
@@ -66,4 +67,49 @@
         }
     }
 
+}
+
+@media (max-width: 896px) {
+    .footer .footerNav {
+        justify-content: space-around;
+        & .quote {
+            width: 100%;
+        }
+
+        & .navigation, & .contactMe {
+            margin-top: 20px;
+        }
+
+        & .navigation {
+            width: 35%;
+        }
+        & .contactMe {
+            width: 55%;
+        }
+    } 
+}
+
+@media (max-width: 538px) {
+    .footer .footerNav {
+       flex-direction: column;
+       text-align: center;
+
+       & .quote p {
+           width: 100%;
+       }
+
+       & .navigation, & .contactMe {
+        width: 100%;
+       }
+      
+    } 
+
+    & .slogan {
+        text-align: center;
+        width: 100%;
+
+        & h1 {
+            width: 100%;
+        }
+    }
 }
