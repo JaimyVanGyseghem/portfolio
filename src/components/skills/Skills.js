@@ -31,7 +31,7 @@ class Skills extends Component {
             <div></div>
             <div></div>
             <h1>Mijn Skills</h1>
-            <p>Hier moet nog een intro komen</p>
+            <p>Hier zie je een overzicht van de talen die ik beheers.</p>
           </div>
 
         <div className="skills">

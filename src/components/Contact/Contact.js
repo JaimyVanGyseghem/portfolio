@@ -45,9 +45,9 @@ const Contact = () => {
 
       <div className="rightSide">
           <h2>Stel je vragen!</h2>
-          <form method="POST" action="form.php">
+          <form method="POST" action="../../form.php">
             <div className="firstLine">
-						<input className="form-control" type="text" placeholder="Naam" name="vrnm" required/>
+						<input className="form-control" type="text" placeholder="Naam" name="nm"required/>
             <input className="form-control" type="text" placeholder="Tel. nummer" name="tel" />
             </div>
             <input className="form-control" type="text" placeholder="E-mail" name="email" required/>

@@ -120,6 +120,9 @@
 }
 
 @media (max-width: 456px) {
+  .thumbnails {
+    padding-bottom: 50px;
+  }
   .thumbnails .flip-card {
     width: 100%;
     margin-bottom: 250px;
