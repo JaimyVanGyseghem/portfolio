@@ -3,7 +3,7 @@ import './Mainpage.css';
 import jaimy from '../../assets/images/main.png'
 const Mainpage = () => {
   return (
-    <div className="mainContainer">
+    <div id="main" className="mainContainer">
     
       <div className="mainpageInfo">
         <p className="intro"><span>Hey! Ik ben</span></p>

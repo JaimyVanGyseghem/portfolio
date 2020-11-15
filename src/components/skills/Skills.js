@@ -23,7 +23,7 @@ class Skills extends Component {
 
   render(){
     return(
-      <div className="mainConainer">
+      <div id="skills" className="mainConainer">
           <div className="title">
             <div></div>
             <div></div>
@@ -31,7 +31,6 @@ class Skills extends Component {
             <div></div>
             <div></div>
             <h1>Mijn Skills</h1>
-            <p>Hier zie je een overzicht van de talen die ik beheers.</p>
           </div>
 
         <div className="skills">

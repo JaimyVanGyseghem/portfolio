@@ -19,10 +19,10 @@ const Footer = () => {
         </div>
         <div className="navigation">
           <h3>Navigatie</h3>
-          <a href="#">Home</a>
-          <a href="#">Over mij</a>
-          <a href="#">Mijn Skills</a>
-          <a href="#">Mijn projecten</a>
+          <a href="#main">Home</a>
+          <a href="#info">Over mij</a>
+          <a href="#skills">Mijn Skills</a>
+          <a href="#projecten">Mijn projecten</a>
         </div>
         <div className="contactMe">
           <h3>Contacteer mij</h3>

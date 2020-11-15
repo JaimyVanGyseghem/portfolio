@@ -47,6 +47,10 @@
         border-radius: var(--border-radius);
         padding: 15px 30px;
         color:white;
+        transition: 0.3s;
+        &:hover {
+            background-color: #FA2A4C;
+        }
     }
 }
 

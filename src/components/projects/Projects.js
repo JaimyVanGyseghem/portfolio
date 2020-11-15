@@ -42,7 +42,6 @@ class Projects extends Component {
             <div></div>
             <div></div>
             <h1>Mijn Projecten</h1>
-            <p>Hier heb je enkele projecten die ik gemaakt heb.</p>
   
             </div>
 

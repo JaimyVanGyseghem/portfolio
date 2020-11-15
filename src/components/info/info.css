@@ -62,6 +62,12 @@
   border-radius: var(--border-radius);
   padding: 15px 30px;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info button:hover {
+  background-color: #FA2A4C;
 }
 
 @media (max-width: 687px) {

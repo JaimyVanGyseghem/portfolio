@@ -16,6 +16,9 @@
 
     & .leftSide {
         margin-left: 20px;
+        & .secondIcon {
+            display: none;
+        }
         & .contactMe {
             & div {
                 display: flex;
@@ -53,6 +56,10 @@
                 & i {
                     font-size: 30px;
                     margin-left: 14px;
+                    transition: 0.5s;
+                    &:hover {
+                        transform: rotate(360deg);
+                    }
                 }
             }
             }
@@ -61,6 +68,7 @@
 
     .rightSide {
         margin-right: 20px;
+
         & .firstLine {
             display: flex;
             margin-top: 20px;
@@ -73,6 +81,12 @@
             background-color: #111111;
             border: 1px solid rgb(131, 131, 131);
             margin-bottom: 15px;
+            color: white;
+        }
+
+        & input:focus {
+            outline: 0;
+            border: 1px solid white;
         }
 
         & textarea {
@@ -85,6 +99,11 @@
             color: white;
             padding: 10px 25px;
             border-radius: 10px;
+            transition: 0.3s;
+            &:hover {
+                background-color: #FA2A4C;
+                border: 1px solid #FA2A4C;
+            }
         }
     }
 }
@@ -96,7 +115,7 @@
 
         & .rightSide {
             margin: 0 auto;
-            width: 70%;
+            width: 95%;
         }
 
         & .leftSide {
@@ -122,6 +141,8 @@
             & .firstIcon {
                 display: none;
             }
+
+            & .secondIcon {display: block;}
         }
 
     }

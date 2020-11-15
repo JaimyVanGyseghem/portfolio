@@ -8,6 +8,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 320px;
+  z-index: 2;
 }
 
 .thumbnails .flip-card {
@@ -132,6 +133,20 @@
   }
   .thumbnails .flip-card .flip-card-back {
     height: 250px;
+  }
+}
+
+@media (max-width: 833px) {
+  .thumbnails .flip-card .flip-card-inner {
+    -webkit-transform-style: flat;
+            transform-style: flat;
+  }
+  .thumbnails .flip-card .flip-card-inner:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .thumbnails .flip-card .flip-card-back {
+    display: none;
   }
 }
 /*# sourceMappingURL=Project.css.map */

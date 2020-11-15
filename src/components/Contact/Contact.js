@@ -16,7 +16,7 @@ const Contact = () => {
               <i className="fas fa-phone-alt firstIcon"></i>
               </div>
               <div className="emailTel">
-                <p>  <i className="fas fa-phone-alt secondIcon"></i> Telefoon:</p>
+                <p> Telefoon:</p>
                 <p>+32 476 66 87 49</p>
               </div>
             </div>
@@ -26,7 +26,7 @@ const Contact = () => {
               <i className="far fa-envelope firstIcon"></i>
               </div>
               <div className="emailTel">
-                <p> <i className="far fa-envelope secondIcon"></i> E-mail:</p>
+                <p>E-mail:</p>
                 <p>jaimy.vangyseghem@gmail.com</p>
               </div>
             </div>
@@ -55,7 +55,6 @@ const Contact = () => {
 						<input className="submit" value="Verstuur" type="submit" name="submit" />
 					</form>
         </div>
-
     </div>
   )
 };

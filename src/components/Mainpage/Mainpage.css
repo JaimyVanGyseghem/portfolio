@@ -72,6 +72,10 @@
   margin-top: 40px;
 }
 
+.mainContainer .buttons a {
+  text-decoration: none;
+}
+
 .mainContainer .buttons .contactBTN {
   background-color: var(--color-blue);
   border: 1px solid var(--color-blue);
@@ -80,6 +84,13 @@
   border-radius: var(--border-radius);
   margin-right: 30px;
   font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainContainer .buttons .contactBTN:hover {
+  background-color: #FA2A4C;
+  border: 1px solid #FA2A4C;
 }
 
 .mainContainer .buttons .projectBTN {
@@ -89,5 +100,11 @@
   padding: 15px 30px;
   border-radius: var(--border-radius);
   font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainContainer .buttons .projectBTN:hover {
+  background-color: #FA2A4C;
 }
 /*# sourceMappingURL=Mainpage.css.map */

@@ -24,6 +24,10 @@
   margin-left: 20px;
 }
 
+.mainContainerContact .leftSide .secondIcon {
+  display: none;
+}
+
 .mainContainerContact .leftSide .contactMe div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +83,13 @@
 .mainContainerContact .leftSide .icons .background a i {
   font-size: 30px;
   margin-left: 14px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mainContainerContact .leftSide .icons .background a i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .mainContainerContact .rightSide {
@@ -100,6 +111,12 @@
   background-color: #111111;
   border: 1px solid #838383;
   margin-bottom: 15px;
+  color: white;
+}
+
+.mainContainerContact .rightSide input:focus {
+  outline: 0;
+  border: 1px solid white;
 }
 
 .mainContainerContact .rightSide textarea {
@@ -112,6 +129,13 @@
   color: white;
   padding: 10px 25px;
   border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mainContainerContact .rightSide .submit:hover {
+  background-color: #FA2A4C;
+  border: 1px solid #FA2A4C;
 }
 
 @media (max-width: 850px) {
@@ -124,7 +148,7 @@
   }
   #contact .rightSide {
     margin: 0 auto;
-    width: 70%;
+    width: 95%;
   }
   #contact .leftSide {
     text-align: center;
@@ -150,6 +174,9 @@
   }
   #contact .leftSide .firstIcon {
     display: none;
+  }
+  #contact .leftSide .secondIcon {
+    display: block;
   }
 }
 /*# sourceMappingURL=Contact.css.map */

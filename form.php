@@ -37,7 +37,7 @@ die("<script type=\"text/javascript\">alert('Gelieve een boodschap in te vullen.
 $pfw_header = "From:" .$email."\n"
 . "Reply-To:".$email."\n";
 $pfw_subject = "Onderwerp van de E-mail";
-$pfw_email_to = "jaimy.vangyseghem@gmail.com";
+$pfw_email_to = "jaimyvangyseghem@jaimyvangyseghem.be";
 // $pfw_email_to = "jaimyvangyseghem@jaimyvangyseghemb.be";
 $pfw_message = "
 
@@ -57,26 +57,6 @@ Email:                      ".$email."
 
 ";
 
-
-
-// <<<EOT
-
-// "Er werd u een bericht gestuurd via het contactformulier van www.jaimyblablabla.com .
-// \n
-// \n
-// \n
-// De gegevens van de persoon die u een bericht stuurde via het contactformulier op uw website zijn:\n
-// \n
-// {$vrnm} {$nm}\n
-// {$adr} {$nr}\n
-// {$post} {$gem}\n
-// \n
-// {$tel}\n
-// {$email}\n
-// \n
-// \n
-// {$msg}\n
-// EOT;
 @mail($pfw_email_to, $pfw_subject, $pfw_message, $pfw_header);
 
 header('location: index.html');

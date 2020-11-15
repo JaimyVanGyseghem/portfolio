@@ -1,11 +1,11 @@
 import React from 'react';
 import './info.css';
-import jaimy from '../../assets/images/jaimy2.jpg';
+import jaimy from '../../assets/images/test.png';
 
 const Info = () => {
 
   return(
-    <div>
+    <div id="info">
         <div className="title">
             <div></div>
             <div></div>
@@ -22,8 +22,8 @@ const Info = () => {
 
           <div>
             <h2> Wie ben ik?</h2>
-            <p>Ik heb mijn passie voor code 2 jaar geleden ontdekt. Na mijn middelbare studies ben ik begonnen op de Arteveldehogeschool met de opleiding Grafisch en digitale media. Uit die opleiding is mijn liefde voor clean code elke dag gegroeid. Na programmeren ben ik voornamelijk bezig met het bijschaven van designs en het luisteren van muziek.</p>
-            <button>Download mijn CV</button>
+            <p>Mijn passie voor code ontdekte ik 2 jaar geleden. Na mijn middelbare studies begon ik aan de opleiding grafische en digitale media op Arteveldehogeschool. Uit deze opleiding is mijn liefde voor clean code elke dag gegroeid. Naast programmeren ben ik voornamelijk bezig met het bijschaven van designs, refactoren van code en het beluisteren van muziek. </p>
+            <a href="jaimyvangyseghem.pdf" download><button>Download mijn CV</button></a>
           </div>
         </div>
     </div>

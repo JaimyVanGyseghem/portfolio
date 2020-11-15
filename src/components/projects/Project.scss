@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 320px;
-
+    z-index: 2;
     & .flip-card {
         background-color: transparent;
         margin-top: 40px;
@@ -126,6 +126,24 @@
 
             & .flip-card-back {
                 height: 250px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 833px) {
+    .thumbnails {
+        & .flip-card {
+
+            & .flip-card-inner {
+                transform-style: flat;
+                &:hover {
+                    transform: none;
+                }
+            }
+            & .flip-card-back {
+                display: none;
             }
         }
 

@@ -60,6 +60,7 @@
 @media (max-width: 415px) {
     .mainConainer {
         .skills {
+            justify-content: center;
             & div {
                 width: 95%;
             }

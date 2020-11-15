@@ -85,3 +85,41 @@ body {
         }
     }
 }
+
+@media (max-width: 366px) {
+    .container {
+        & .mainContainer {
+            & .buttons {
+                & a {
+                    & button {
+                        padding: 5px 10px;
+                        font-size: 16px;
+                    }
+
+                    .contactBTN {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 300px) {
+    .container {
+        & .mainContainer {
+            & .buttons {
+                & a {
+                    & button {
+                        padding: 5px 10px;
+                        font-size: 12px;
+                    }
+
+                    .contactBTN {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    } 
+}
