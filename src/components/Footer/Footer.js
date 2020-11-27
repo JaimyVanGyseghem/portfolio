@@ -3,7 +3,7 @@ import './Footer.css';
 
 
 const Footer = () => {
-
+console.log("t");
   return(
     <div className="footer">
       <div className="slogan">
